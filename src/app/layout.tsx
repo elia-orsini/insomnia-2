@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
+    siteName: "IN$0MN1A Events",
+    url: "https://insomniaevents.xyz",
     images: [
       {
         url: "/insomnia-logo-192.png",
