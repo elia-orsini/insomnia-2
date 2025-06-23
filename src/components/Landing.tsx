@@ -148,7 +148,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
                 classica con la modernità dell’estetica informatica.
               </p>
 
-              <p className="mt-14 text-left font-mono text-[0.7rem] text-white sm:mt-24 sm:text-[0.9rem]">
+              <p className="mt-14 text-left font-mono text-[0.7rem] text-white sm:mt-24 sm:text-[0.9rem] hidden md:block">
                 return &#123; <br />
                 &nbsp;&nbsp;&nbsp;&nbsp; const <span className="font-extrabold">sounds</span> = [{" "}
                 <br />
