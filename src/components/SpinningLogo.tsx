@@ -1,6 +1,5 @@
 import React from "react";
 import { useRef } from "react";
-import { useFrame } from "@react-three/fiber";
 import { Environment, useGLTF } from "@react-three/drei";
 import useWindowWidth from "@/hooks/useWindowWidth";
 
@@ -9,10 +8,6 @@ const SpinningLogo: React.FC = () => {
   const ref = useRef<any>(null);
 
   const windowWidth = useWindowWidth();
-
-  // useFrame(() => {
-  //   ref.current.rotation.z += 0.01;
-  // });
 
   return (
     <>
