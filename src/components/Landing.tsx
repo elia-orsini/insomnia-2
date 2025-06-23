@@ -42,7 +42,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
           <br />
           <br />
           <br />
-          <span className="mb-60 mt-20 text-[0.7rem] italic leading-tight">
+          <span className="mb-60 mt-20 text-sm italic leading-tight">
             Copyright © 2025 Insomnia Events. All rights reserved.
             <br />
             <br />
@@ -203,12 +203,12 @@ export default function Landing({ initialState }: { initialState?: string }) {
 
           {!!activeSection && (
             <div className="section-content">
-              <div className="fixed right-0 z-0 h-screen w-screen p-4 md:w-[40vw] md:p-10">
+              <div className="fixed right-0 z-0 h-screen w-screen p-4 md:w-[50vw] md:p-10">
                 <p className="mb-6 text-right text-2xl font-black xl:mb-10">
                   {sectionContent[activeSection].title}
                 </p>
 
-                <p className="text-sm sm:text-[15px] xl:text-base">
+                <p className="text-base sm:text-lg">
                   {sectionContent[activeSection].text}
                 </p>
 
