@@ -70,7 +70,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
 
       {/* SOCIALS */}
       <div className="absolute bottom-0 left-0 z-30 flex flex-row gap-x-8 p-5">
-        <a target="_blank" href="https://www.facebook.com/InsomniaPageOfficial">
+        <a className="hover:cursor-cell" target="_blank" href="https://www.facebook.com/InsomniaPageOfficial">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -82,7 +82,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
           </svg>
         </a>
-        <a target="_blank" href="https://www.instagram.com/insomnia.01">
+        <a className="hover:cursor-cell" target="_blank" href="https://www.instagram.com/insomnia.01">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -94,7 +94,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
             <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
           </svg>
         </a>
-        <a href="https://open.spotify.com/user/e1ex6sgsk9ocg117lon5jfx9n?si=QEVdTBm9QECsK6X7ORDcRQ">
+        <a className="hover:cursor-cell" href="https://open.spotify.com/user/e1ex6sgsk9ocg117lon5jfx9n?si=QEVdTBm9QECsK6X7ORDcRQ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -127,18 +127,18 @@ export default function Landing({ initialState }: { initialState?: string }) {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div className="fixed right-0 mb-20 w-screen p-4 text-left md:w-[35vw] md:p-10">
+            <div className="fixed right-0 mb-20 w-screen p-4 text-left md:w-[50vw] md:p-10">
               {menuItems.map((item: any) => (
                 <button
                   key={item.id}
-                  className="mt-3.5 block text-left text-2xl hover:underline"
+                  className="mt-3.5 block text-left text-xl uppercase hover:cursor-cell hover:underline"
                   onClick={() => toggleSection(item.id)}
                 >
                   {item.label}
                 </button>
               ))}
 
-              <p className="relative z-10 mt-7 text-[1.3rem] font-light">
+              <p className="relative z-10 mt-7 text-[1.2rem] font-light">
                 IN$0MN1A nasce come un modo per esprimersi artisticamente attraverso eventi e
                 progetti musicali. <br />
                 Il suono di <b>IN$0MN1A</b> è basato sull’Hip-Hop, la Trap e la Bass Music con una
@@ -146,6 +146,57 @@ export default function Landing({ initialState }: { initialState?: string }) {
                 La nostra comunicazione cerca di unire due scene, quella hip-hop e quella
                 elettronica, utilizzando grafiche scure ma accattivanti e rivisitando l’arte
                 classica con la modernità dell’estetica informatica.
+              </p>
+
+              <p className="mt-14 text-left font-mono text-[0.7rem] text-white sm:mt-24 sm:text-[0.9rem]">
+                return &#123; <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; const <span className="font-extrabold">sounds</span> = [{" "}
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/lucafontana.mp3">
+                  lucafontana
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/alessio.dali">
+                  dali
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/rinobellandi">
+                  xy71
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/filo.wav">
+                  filo.wav
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/_vincenzofraccica_">
+                  vinci
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; ], <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; const <span className="font-extrabold">visuals</span> = [{" "}
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/elig.ace">
+                  elig.ace
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/elig.graphics">
+                  elig.graphics
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{" "}
+                <a target="_blank" className="hover:underline hover:cursor-cell" href="https://instagram.com/kristoffer.castroo">
+                  kristoffer.castro
+                </a>
+                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp; ], <br />
+                &#125;
               </p>
             </div>
           </Transition>
@@ -207,7 +258,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
       </div>
 
       <button
-        className={`fixed bottom-16 right-6 z-10 flex h-12 w-12 max-w-xl rotate-[270deg] rounded-full border p-0 px-2 font-semibold transition-colors duration-500 hover:cursor-cell xl:bottom-12 xl:right-14 xl:h-16 xl:w-16 ${
+        className={`fixed bottom-16 right-10 z-10 flex h-16 w-16 max-w-xl rotate-[270deg] rounded-full border p-0 px-2 font-semibold transition-colors duration-500 hover:cursor-cell xl:bottom-12 xl:right-14 xl:h-16 xl:w-16 ${
           show
             ? "border-white bg-white text-black hover:border-black hover:bg-white hover:text-black"
             : "border-white text-white hover:border-white hover:bg-black hover:text-white"

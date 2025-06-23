@@ -7,6 +7,11 @@
   --foreground: #ffffff;
 }
 
+::selection {
+  background: #ffffff;
+  color: #000000;
+}
+
 * {
   font-synthesis: none !important;
   -webkit-font-smoothing: antialiased !important;

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import type { Viewport } from "next";
+import localFont from "next/font/local";
+
+const NeueHaasUnicaW1G = localFont({ src: "./NeueHaasUnicaW1G-Bold.woff2" });
 
 export const metadata: Metadata = {
-  title: "Insomnia Events",
+  title: "IN$0MN1A Events",
   description:
-    "Insomnia Events is music, events and culture. Find us this summer at Coco Beach in Lonato del Garda. To enter our world, join our parties. Find more info on our socials.",
+    "IN$0MN1A (INSOMNIA) Events is music, events and culture. Find us this summer at Coco Beach in Lonato del Garda. To enter our world, join our parties. Find more info on our socials.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -32,7 +35,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`no-scrollbar cursor-cell overflow-clip antialiased`}>{children}</body>
+      <body
+        className={`no-scrollbar cursor-cell overflow-clip antialiased ${NeueHaasUnicaW1G.className}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
