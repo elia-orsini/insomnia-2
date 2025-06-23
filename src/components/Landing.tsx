@@ -258,7 +258,7 @@ export default function Landing({ initialState }: { initialState?: string }) {
       </div>
 
       <button
-        className={`fixed bottom-16 right-10 z-10 flex h-16 w-16 max-w-xl rotate-[270deg] rounded-full border p-0 px-2 font-semibold transition-colors duration-500 hover:cursor-cell xl:bottom-12 xl:right-14 xl:h-16 xl:w-16 ${
+        className={`fixed bottom-10 right-10 z-10 flex h-16 w-16 max-w-xl rotate-[270deg] rounded-full border p-0 px-2 font-semibold transition-colors duration-500 hover:cursor-cell xl:bottom-12 xl:right-14 xl:h-16 xl:w-16 ${
           show
             ? "border-white bg-white text-black hover:border-black hover:bg-white hover:text-black"
             : "border-white text-white hover:border-white hover:bg-black hover:text-white"
